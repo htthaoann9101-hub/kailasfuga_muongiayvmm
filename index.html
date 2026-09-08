@@ -5,43 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MƯỢN GIÀY KAILAS FUGA RACE VMM 2026</title>
   
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  
   <!-- Google Fonts & Font Awesome Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: '#f824b9',
-            darkbg: '#121212',
-            cardbg: '#1e1e1e',
-            bordercolor: '#333333'
-          },
-          fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
     body {
-      background-color: #121212;
-      color: #ffffff;
+      background-color: #121212 !important;
+      color: #ffffff !important;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      margin: 0;
+      padding: 0;
     }
   </style>
 </head>
 <body class="min-h-screen flex items-center justify-center p-4">
 
-  <div class="w-full max-w-2xl bg-[#1e1e1e] rounded-xl border border-[#333333] p-6 md:p-8 shadow-2xl">
+  <div class="w-full max-w-2xl bg-[#1e1e1e] rounded-xl border border-[#333333] p-6 md:p-8 shadow-2xl my-8">
     
     <div id="formContent">
       <!-- Hashtags -->
@@ -50,12 +35,12 @@
         <span class="bg-[#f824b9]/10 text-[#f824b9] border border-[#f824b9] text-xs font-semibold px-3 py-1 rounded-full"># Kailas FUGA x VMM 2026</span>
       </div>
 
-      <!-- Title -->
+      <!-- Tiêu đề -->
       <h1 class="text-2xl font-extrabold text-white uppercase border-l-4 border-[#f824b9] pl-3 mb-3 leading-tight">
         MƯỢN GIÀY KAILAS FUGA RACE VMM 2026
       </h1>
       
-      <!-- Description -->
+      <!-- Mô tả -->
       <p class="text-gray-400 text-sm mb-6 leading-relaxed">
         Dành cho các VĐV tham gia Vietnam Mountain Marathon 2026. Hãy điền thông tin bên dưới để đăng ký mượn một đôi Kailas FUGA dòng EX để chinh phục giải đấu VMM 2026.
       </p>
@@ -79,7 +64,7 @@
           </div>
         </div>
 
-        <!-- Social Links -->
+        <!-- Facebook & Instagram -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <label class="block text-sm font-semibold mb-1">Link Facebook <span class="text-[#f824b9]">*</span></label>
@@ -110,13 +95,13 @@
           </div>
         </div>
 
-        <!-- Thời gian hoàn thành dự kiến -->
+        <!-- Thời gian dự kiến -->
         <div>
           <label class="block text-sm font-semibold mb-1">Thời gian hoàn thành dự kiến (Estimated Time) <span class="text-[#f824b9]">*</span></label>
           <input type="text" name="estimatedTime" required placeholder="Ví dụ: 12 giờ 30 phút" class="w-full bg-[#121212] border border-[#333333] rounded-lg p-3 text-sm focus:border-[#f824b9] outline-none text-white">
         </div>
 
-        <!-- Chọn mẫu giày -->
+        <!-- Mẫu giày mượn -->
         <div>
           <label class="block text-sm font-semibold mb-2">Chọn mẫu giày mượn <span class="text-[#f824b9]">*</span></label>
           <div class="space-y-2">
@@ -167,7 +152,7 @@
           </div>
         </div>
 
-        <!-- Lịch sử sử dụng Kailas -->
+        <!-- Kinh nghiệm dùng Kailas -->
         <div>
           <label class="block text-sm font-semibold mb-2">Bạn đã từng dùng giày/sản phẩm nào của Kailas FUGA chưa? <span class="text-[#f824b9]">*</span></label>
           <div class="space-y-2">
@@ -192,7 +177,7 @@
           <textarea name="rentalReason" rows="3" required placeholder="Chia sẻ ngắn gọn lý do..." class="w-full bg-[#121212] border border-[#333333] rounded-lg p-3 text-sm focus:border-[#f824b9] outline-none text-white"></textarea>
         </div>
 
-        <button type="submit" id="submitBtn" class="w-full bg-[#f824b9] hover:bg-[#f824b9]/90 text-white font-bold py-3.5 px-4 rounded-lg transition text-center uppercase tracking-wide">
+        <button type="submit" id="submitBtn" class="w-full bg-[#f824b9] hover:bg-[#f824b9]/90 text-white font-bold py-3.5 px-4 rounded-lg transition text-center uppercase tracking-wide cursor-pointer">
           Gửi Đăng Ký
         </button>
 
@@ -206,7 +191,7 @@
       </form>
     </div>
 
-    <!-- Success Message -->
+    <!-- Thông báo thành công -->
     <div id="successMessage" class="hidden text-center py-8 space-y-4">
       <div class="w-16 h-16 bg-[#f824b9]/20 text-[#f824b9] rounded-full flex items-center justify-center mx-auto text-2xl border border-[#f824b9]">
         <i class="fa-solid fa-check"></i>
